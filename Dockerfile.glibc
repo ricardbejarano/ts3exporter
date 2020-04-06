@@ -1,0 +1,25 @@
+FROM golang:1 AS build
+
+ARG VERSION="0.0.5"
+ARG CHECKSUM="59cdb05c2a87c7c7c7be19b81198dc0afdc6eefdbc6fd85336994c38973bdb3b"
+
+ADD https://github.com/hikhvar/ts3exporter/archive/v$VERSION.tar.gz /tmp/ts3exporter.tar.gz
+
+RUN [ "$CHECKSUM" = "$(sha256sum /tmp/ts3exporter.tar.gz | awk '{print $1}')" ] && \
+    tar -C /tmp -xf /tmp/ts3exporter.tar.gz && \
+    cd /tmp/ts3exporter-$VERSION && \
+      CGO_ENABLED=0 go build
+
+RUN mkdir -p /rootfs/etc && \
+    cp /tmp/ts3exporter-$VERSION/ts3exporter /rootfs/ && \
+    echo "nogroup:*:100:nobody" > /rootfs/etc/group && \
+    echo "nobody:*:100:100:::" > /rootfs/etc/passwd
+
+
+FROM scratch
+
+COPY --from=build --chown=100:100 /rootfs /
+
+USER 100:100
+EXPOSE 9189/tcp
+ENTRYPOINT ["/ts3exporter"]
