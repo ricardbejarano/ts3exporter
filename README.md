@@ -9,15 +9,15 @@
 
 Available on [Docker Hub](https://hub.docker.com) as [`ricardbejarano/ts3exporter`](https://hub.docker.com/r/ricardbejarano/ts3exporter):
 
-- [`0.0.5-glibc`, `0.0.5`, `glibc`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.glibc) (about `11.8MB`)
-- [`0.0.5-musl`, `musl` *(Dockerfile.musl)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.musl) (about `11.8MB`)
+- [`0.0.6-glibc`, `0.0.6`, `glibc`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.glibc) (about `11.8MB`)
+- [`0.0.6-musl`, `musl` *(Dockerfile.musl)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.musl) (about `11.8MB`)
 
 ### Quay
 
 Available on [Quay](https://quay.io) as:
 
-- [`quay.io/ricardbejarano/ts3exporter`](https://quay.io/repository/ricardbejarano/ts3exporter), [`quay.io/ricardbejarano/ts3exporter-glibc`](https://quay.io/repository/ricardbejarano/ts3exporter-glibc), tags: [`0.0.5`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.glibc) (about `11.8MB`)
-- [`quay.io/ricardbejarano/ts3exporter-musl`](https://quay.io/repository/ricardbejarano/ts3exporter-musl), tags: [`0.0.5`, `master`, `latest` *(Dockerfile.musl)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.musl) (about `11.8MB`)
+- [`quay.io/ricardbejarano/ts3exporter`](https://quay.io/repository/ricardbejarano/ts3exporter), [`quay.io/ricardbejarano/ts3exporter-glibc`](https://quay.io/repository/ricardbejarano/ts3exporter-glibc), tags: [`0.0.6`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.glibc) (about `11.8MB`)
+- [`quay.io/ricardbejarano/ts3exporter-musl`](https://quay.io/repository/ricardbejarano/ts3exporter-musl), tags: [`0.0.6`, `master`, `latest` *(Dockerfile.musl)*](https://github.com/ricardbejarano/ts3exporter/blob/master/Dockerfile.musl) (about `11.8MB`)
 
 
 ## Features
