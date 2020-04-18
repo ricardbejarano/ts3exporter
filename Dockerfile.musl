@@ -1,7 +1,7 @@
 FROM golang:1-alpine AS build
 
-ARG VERSION="0.0.6"
-ARG CHECKSUM="835945a41813ee89a8d6b88276a63be637f805bc1d05fa295285366e0e668c20"
+ARG VERSION="0.0.7"
+ARG CHECKSUM="53cc05b1dc43b036f6c4a636bfae2482d3769753033886c36537bccd86b563ad"
 
 ADD https://github.com/hikhvar/ts3exporter/archive/v$VERSION.tar.gz /tmp/ts3exporter.tar.gz
 
